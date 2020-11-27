@@ -10,3 +10,14 @@ scroll-behavior: smooth;}
   }
 #pret-vechi {text-decoration:line-through red;
     ;}
+    blockquote {font-size: 1.3em;
+    font-style: italic;
+  color: rgb(61, 136, 12);}
+  li{list-style-type:disc;}
+  ul{font-family: sans-serif;}
+
+  p.pret {font-size: 1.2em;
+  color: brown;
+font-weight: bold;}
+img {display: block;
+margin: auto}
