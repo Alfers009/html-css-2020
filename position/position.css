@@ -1,0 +1,34 @@
+body{height: 200vh;}
+div{width: 5em;
+height: 5em;
+font-family: sans-serif;
+color: white;
+text-align: center;
+line-height: 5em;}
+
+
+#a {background-color: darkorange;
+position: relative;
+top: 1em;
+right: -1em;}
+#b {background-color: darkorchid;
+position: absolute;
+top: 3em;
+right: 2em;}
+#c {background-color: darksalmon;
+position: fixed;
+top: 0;
+left: 50%;
+}
+#d {background-color: darkturquoise;
+position: sticky;
+top: 0;}
+
+#parinte {background-color: violet;
+     width: 10em;
+    height: 10em;
+position: relative;}
+
+#copil {background-color: pink;
+position: absolute;
+top: 2em;}
