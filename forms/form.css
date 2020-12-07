@@ -1,0 +1,24 @@
+input{display: block;
+    margin: 0.2em 0 0.5em 0;
+    }
+button{display: block;
+    /*
+        Schimbam stilul butonului
+    */
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,212,1) 100%);
+    border-style: none;
+    padding: 0.5em;
+    color: white;
+    border-radius: 0.5em;
+    width: 7em;
+    }
+label{font-family: sans-serif;
+    }
+textarea{display: block;
+    font-family: sans-serif;
+    margin-bottom: 0.5em
+    }
+select{display: block; 
+    }
+ /* Tema Exercitiul 1 si 2 */

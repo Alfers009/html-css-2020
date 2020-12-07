@@ -1,0 +1,15 @@
+table {border-style: solid;
+    border-color: teal;
+    border-spacing: 0em;
+    border-collapse: collapse;}
+td{border-style: solid;
+    border-color: tomato;
+    padding: 0.5em;
+    }
+th{border-style: solid;
+    border-color: olive;
+    background-color: olive;
+    color: white;
+    text-align: left;
+    text-transform:uppercase;
+    padding-right: 0.5em;}
