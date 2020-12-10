@@ -1,0 +1,31 @@
+*{box-sizing: border-box;}
+header{background-color: rgb(48, 46, 46);}
+.header{list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.heade{display: inline;
+    text-align: center;
+    padding: 1.5em;
+    color: white;
+    font-family: sans-serif;
+}
+h1{ display: flex;
+    justify-content: center;
+    font-family: 'Russo One', sans-serif;}
+img{max-width: 20%;
+    height: auto;
+    margin-left: 24%;
+    float: left;
+}
+.list{padding: 1.4em;
+    width: auto;
+     overflow: hidden;
+     font-size: 1.5em;
+     font-family: sans-serif;
+}
+
+
+
+
+
