@@ -1,31 +1,79 @@
-*{box-sizing: border-box;}
-header{background-color: rgb(48, 46, 46);}
-.header{list-style-type: none;
-    display: flex;
-    justify-content: center;
+/* css reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.heade{display: inline;
-    text-align: center;
-    padding: 1.5em;
-    color: white;
+body{
     font-family: sans-serif;
 }
-h1{ display: flex;
-    justify-content: center;
-    font-family: 'Russo One', sans-serif;}
-img{max-width: 20%;
-    height: auto;
-    margin-left: 24%;
-    float: left;
+header{
+    background-color: rgb(54, 54, 54) ;
+    text-align: center;
+    padding: 3em;
 }
-.list{padding: 1.4em;
-    width: auto;
-     overflow: hidden;
-     font-size: 1.5em;
-     font-family: sans-serif;
+header li{
+    display: inline;
+}
+a:hover{
+    color: white;
+     font-size:  1.1em; 
 }
 
+a{
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    padding-right: 1.5em;
+    transition-property: font-size;
+    transition-duration: 1s;
+}
+article{
+    background-color: rgb(210, 210, 210);
+    text-align: center;
+    padding-bottom: 4em;
+}
+h1{
+    font-family: monospace;
+    text-align: center;
+    padding: 1.5em;
+}
+img:hover{
+    height: 47vh;
+    transform: rotate(360deg);
+    transform:scale (1,2);
+}
+img{
+    height: 45vh;
+    transition-duration: 1s;
+}
+article div{
+    display: inline-block;
+    vertical-align: middle;
+}
 
+article ul{
+    list-style-type: none;
+}
 
+article li{
+    padding: 2em;
+}
 
-
+input[type="button"] {
+    background-color: orange;
+    border-radius: 0.3em;
+    border-style: none;
+    padding: 0.3em 1em;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+footer{
+    background-color:rgb(39, 39, 39);
+    text-align: center;
+    color: white;
+    padding: 3em 0;
+}
+p{
+    margin-bottom: 2em;
+}
