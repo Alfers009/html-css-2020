@@ -1,64 +1,73 @@
-/* css reset */
-*{
+/* css rest */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+body {
     font-family: sans-serif;
 }
-header{
-    background-color: rgb(54, 54, 54) ;
+header {
+    background-color: rgb(54, 54, 54);
     text-align: center;
-    padding: 3em;
+    padding: 1em;
 }
-header li{
+header li {
     display: inline;
 }
-a:hover{
-    color: white;
-     font-size:  1.1em; 
-}
-
-a{
-    color: rgb(200, 200, 200);
+a {
+    color: rgb(210, 210, 210);
     text-decoration: none;
-    padding-right: 1.5em;
-    transition-property: font-size;
+    margin-right: 1.5em;
     transition-duration: 1s;
+    display: inline-block;
 }
-article{
+a:hover {
+    color: sandybrown;
+    transform: scale(1.1);
+}
+article {
     background-color: rgb(210, 210, 210);
     text-align: center;
-    padding-bottom: 4em;
+    padding-bottom: 3em;
 }
-h1{
+@keyframes colorize {
+    from {
+        color: black;
+    }
+    to {
+        color: orangered;
+    }
+}
+h1 {
     font-family: monospace;
     text-align: center;
     padding: 1.5em;
+    animation-name: colorize;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
-img:hover{
-    height: 47vh;
-    transform: rotate(360deg);
-    transform:scale (1,2);
-}
-img{
+img {
     height: 45vh;
-    transition-duration: 1s;
+    transition-duration: 2s;
 }
-article div{
+img:hover {
+    /* height: 50vh; */
+    transform: rotate(360deg);
+    transform: translate(-50px, -100px);
+    transform: scale(1.2);
+}
+article div {
     display: inline-block;
     vertical-align: middle;
 }
-
-article ul{
+article ul {
     list-style-type: none;
 }
-
-article li{
-    padding: 2em;
+article li {
+    padding: 1em;
 }
-
 input[type="button"] {
     background-color: orange;
     border-radius: 0.3em;
@@ -68,12 +77,12 @@ input[type="button"] {
     text-transform: uppercase;
     cursor: pointer;
 }
-footer{
-    background-color:rgb(39, 39, 39);
+footer {
+    background-color: rgb(39, 39, 39);
     text-align: center;
     color: white;
-    padding: 3em 0;
+    padding: 1em 0;
 }
-p{
-    margin-bottom: 2em;
+p {
+    margin-bottom: 1em;
 }
