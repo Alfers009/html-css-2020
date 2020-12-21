@@ -11,6 +11,7 @@ header{
     padding: 0.5em 0;
     position: fixed;
     width: 100vw;
+    z-index: 1;
 }
 nav ul{
     display: flex;
@@ -30,4 +31,31 @@ nav ul a{
     height: 100vh;
     background-image: url(headerback.jpg) ;
     background-size: cover;
+}
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: 0.5;
+    position: absolute;
+    
+}
+article {
+    z-index: 1;
+}
+.gray {
+    background-color: gray;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    padding: 0.5em;
+
+}
+.gray div {
+    /* position: relative; 
+    left: 1em;
+    top: 1em;*/
+    transform: translate(1em,1em);
 }
