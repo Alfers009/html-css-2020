@@ -1,0 +1,10 @@
+.alert-dismissible {
+    width: 50%;
+    position: absolute;
+    top:4em;
+    right: 2em;
+
+}
+ #carouselExampleInterval > img {
+     width: 50% !important;
+ }
