@@ -5,33 +5,32 @@
 }
 body {
     background-color: var(--back-color);
-    color:var(--font-color);
+    color: var(--font-color);
     font-family: sans-serif;
 }
 h1 {
     text-align: center;
-    margin: 1.5em ;
+    margin: 1.5em;
 }
 nav ul {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 nav ul li {
-    margin:  0.5em 1em;
+    margin: 0.5em 1em;
+    list-style-type: none;
     text-transform: uppercase;
 }
 #switch {
-     font-size: 1.5em;
-     position: relative;
-     top: -0.1em;
-     cursor: pointer;
-     
-
-
+    font-size: 1.5em;
+    position: relative;
+    top: -0.1em;
+    cursor: pointer;
 }
 div {
-    height: 60vh;
-    background-image: url("moon.jpg");
+    height: 40vh;
+    background-image: url(moon.jpg);
     background-size: cover;
     background-position-y: -10vh;
     display: flex;
