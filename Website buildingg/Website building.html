@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+        <div>{{ message + ' ' + "Felicitari" + input_message}} </div>
+        <input v-mode="input_message">
+        <div v-if="is_something">Daca este true se vede</div>
+        <div></div>
+
+
+        <ol>
+            <li v-for="list_item in list_orase"> {{list_item}}</li>
+        </ol>
+        <button @click="is_something = !is_something">Schimba starea</button>
+    </div>
+    
+    
+    
+</body>
+
+<script>
+    var app = new Vue({
+        el:"#vue-app",
+        data: {
+            message:' Aici este un mesaj',
+            is_something :true,
+            list_orase: ["Iasi","Cluj","Brasov","Craiova"]
+        }
+
+    })
+</script>
+</html>
