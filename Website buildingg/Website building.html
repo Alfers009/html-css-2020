@@ -12,13 +12,22 @@
         <div>{{ message + ' ' + "Felicitari" + input_message}} </div>
         <input v-mode="input_message">
         <div v-if="is_something">Daca este true se vede</div>
-        <div></div>
+        
 
 
         <ol>
-            <li v-for="list_item in list_orase"> {{list_item}}</li>
+            <li v-for="list_item in list_orase"> {{item}}</li>
         </ol>
-        <button @click="is_something = !is_something">Schimba starea</button>
+        <p>
+            {{input_message}}
+        </p>
+        <button v-on:click="reverseString">ReverseString</button>
+        <button @click="is_something = !is_something">
+            Schimba starea
+        </button>
+        <button @click ="appendItem">appendItem
+
+        </button>
     </div>
     
     
@@ -30,8 +39,17 @@
         el:"#vue-app",
         data: {
             message:' Aici este un mesaj',
+            input_message:'',
             is_something :true,
             list_orase: ["Iasi","Cluj","Brasov","Craiova"]
+        },
+        methods: {
+            reverseString :function(){
+                this.input_message = this.input_message.split('').reverse().join('')
+            },
+            appendItem: function(){
+                this.list_orase.push(this.input_message)
+            }
         }
 
     })
