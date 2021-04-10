@@ -1,0 +1,13 @@
+h1 {
+    color: orange;
+    animation duration: 3s;
+    animation iteration-count:indeterminate;
+    
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}

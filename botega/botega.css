@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+#homepage {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#homepage h1 {
+    font-family: Tenez;
+}
+#homepage a {
+    font-family: Futura;
+}
