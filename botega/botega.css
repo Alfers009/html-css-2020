@@ -1,19 +1,94 @@
-* {
+@media screen and (max-with:600px){
+    body{
+        font-size: 14px;
+    }
+}
+@media screen and (min-with:600px) and (max-with:1024px){
+body{
+    font-size: 16px;
+}
+#homepage{
+    background-size: 30%;
+}
+}
+@media screen and (min-with:1024px) {
+    body{
+        font-size: 20px;
+    }
+    #homepage{
+        background-size: 25%;
+    }
+    }
+*{
     padding: 0;
     box-sizing: border-box;
     margin: 0;
 }
-#homepage {
-    background-color: black;
-    color: white;
+body{
+    overflow: hidden;
+}
+#homepage, #lastpage {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
+}
+#homepage {
+    background-color: black;
+    color: white;
+    background-image: url(https://raw.githubusercontent.com/miezuit/html_css/master/bottega/img/1.jpg);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position:center
 }
 #homepage h1 {
     font-family: Tenez;
+    font-size: 7em;
+    margin-bottom: 0.5em;
 }
-#homepage a {
-    font-family: Futura;
+#enter,#back {
+    font-family: "futura-pt";
+    font-size: 2em ;
+    cursor: pointer;
 }
+#back{
+    color: white;
+}
+#lastpage {
+    background-color:rgb(255, 92, 92);
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    width: 100vw;
+    
+}
+#photos{
+    margin-bottom: 2em;
+}
+@keyframes slide-in {
+    to{
+        left:0;
+    }
+}
+.slide-in ,.slide-out{
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.slide-in {
+    animation-name: slide-in;
+}
+
+@keyframes slide-out {
+    from{
+        left: 0;
+    }
+    to {
+        left: 100vw;
+    }
+
+}
+.slide-out {
+    animation-name: slide-out;
+}
+
