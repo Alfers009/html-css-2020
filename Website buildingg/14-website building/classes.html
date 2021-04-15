@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Om {
+
+        }
+        class Animal {
+            constructor(age){
+            this.age = age;
+    
+            }
+        }
+class Dog {
+    cry(){
+        console.log{"Ham"}
+    }
+}
+class Cat extends Animal {
+
+            constructor(age, owner){
+            super(age);
+            this.owner = owner;
+            }
+        
+    
+
+    cry () {
+        console.log("Miau");
+    }
+
+}
+class RussianBlueCat extends Cat{
+    cry() {
+        console.log("Miau Miau Miau Miau")
+    }
+}
+let proprietar = new Om();
+
+let pisicaRino = new Cat(2,proprietar);
+
+function verificaSunetul(Animal){
+    animal.cry();
+}
+
+verificaSunetul(pisicaRino);
+verificaSunetul(Dog);
+
+pisicaRino.cry();
+pisicaTommy.cry();
+
+    </script>
+    
+</body>
+</html>
